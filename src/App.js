@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import CTA from "./components/CTA.jsx";
+import Hero from "./components/Hero.jsx";
+import Navbar from "./components/Navbar.jsx";
+import HowWeWork from "./components/HowWeWork.jsx";
+import JobGuarantee from "./components/JobGuarantee.jsx";
+import Pricing from "./components/Pricing.jsx";
+import Alumni from "./components/Alumni.jsx";
+import Employer from "./components/Employer.jsx";
+import ProTips from "./components/ProTips.jsx";
+import BookingForm from "./components/BookingForm.jsx";
+import FAQ from "./components/FAQ.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Hero />
+      <JobGuarantee />
+      <CTA />
+      <Pricing />
+      <HowWeWork />
+      <Alumni />
+      <Employer />
+      <ProTips />
+      <BookingForm />
+      <FAQ />
+      <Footer />
     </div>
   );
 }
