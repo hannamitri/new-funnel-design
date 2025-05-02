@@ -9,7 +9,8 @@ function AlumniShowcase() {
     {
       id: 1,
       name: "Jake McCambley",
-      image: "/api/placeholder/300/300",
+      image:
+        "https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png",
       former: "Wilderness Guide",
       current: "Software Engineer",
       company: "Zencare",
@@ -18,7 +19,8 @@ function AlumniShowcase() {
     {
       id: 2,
       name: "Tiffany Hall",
-      image: "/api/placeholder/300/300",
+      image:
+        "	https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png",
       former: "Special Ed Teacher",
       current: "Full-stack Developer",
       company: "Scholastic",
@@ -27,7 +29,8 @@ function AlumniShowcase() {
     {
       id: 3,
       name: "Chuk Okoli",
-      image: "/api/placeholder/300/300",
+      image:
+        "	https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png",
       former: "Refinery Operations Specialist",
       current: "Machine Learning Engineer",
       company: "Leidos",
@@ -91,7 +94,7 @@ function AlumniShowcase() {
               >
                 <h3 className="alumni-name">{alum.name}</h3>
                 <div className="alumni-photo">
-                  <img src={alum.image} alt={alum.name} />
+                  <img src={alum.image} alt={alum.name} className="alumni-img"/>
                 </div>
 
                 <div className="career-info">
@@ -120,9 +123,6 @@ function AlumniShowcase() {
                     </a>
                   )}
 
-                  <a href="#" className="linkedin-btn">
-                    <Linkedin size={18} /> LinkedIn
-                  </a>
                 </div>
               </div>
             ))}

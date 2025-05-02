@@ -19,7 +19,7 @@ function HowWeWork() {
 
           <div className="journey-step">
             <div className="step-icon">
-              <CheckCircle size={24} color="#F5A78B" />
+              <CheckCircle size={24} color="#4f45e4" />
             </div>
             <h3 className="step-title">Constant practice</h3>
             <p className="step-description">
@@ -30,7 +30,7 @@ function HowWeWork() {
 
           <div className="journey-step">
             <div className="step-icon">
-              <CheckCircle size={24} color="#F5A78B" />
+              <CheckCircle size={24} color="#4f45e4" />
             </div>
             <h3 className="step-title">Non-stop support</h3>
             <p className="step-description">
@@ -41,7 +41,7 @@ function HowWeWork() {
 
           <div className="journey-step">
             <div className="step-icon">
-              <CheckCircle size={24} color="#F5A78B" />
+              <CheckCircle size={24} color="#4f45e4" />
             </div>
             <h3 className="step-title">Professional job-search support</h3>
             <p className="step-description">
@@ -52,7 +52,7 @@ function HowWeWork() {
 
           <div className="journey-step">
             <div className="step-icon">
-              <CheckCircle size={24} color="#F5A78B" />
+              <CheckCircle size={24} color="#4f45e4" />
             </div>
             <h3 className="step-title">Deep portfolio</h3>
             <p className="step-description">
@@ -64,7 +64,7 @@ function HowWeWork() {
 
         <div className="illustration-container">
           <img
-            src="/api/placeholder/900/300"
+            src="	https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png"
             alt="Learning journey illustration showing a student with laptop and various coding elements"
             className="journey-illustration"
           />

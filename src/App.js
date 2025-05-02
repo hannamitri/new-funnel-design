@@ -12,12 +12,16 @@ import ProTips from "./components/ProTips.jsx";
 import BookingForm from "./components/BookingForm.jsx";
 import FAQ from "./components/FAQ.jsx";
 import Footer from "./components/Footer.jsx";
+import PromotionBanner from "./components/PromotionBanner.jsx";
+import Featured from "./components/Featured.jsx";
 
 function App() {
   return (
     <div>
       <Navbar />
+      <PromotionBanner />
       <Hero />
+      <Featured />
       <JobGuarantee />
       <CTA />
       <Pricing />

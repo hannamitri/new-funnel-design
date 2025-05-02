@@ -16,13 +16,22 @@ function CTABanner() {
         <div className="advisor-images-main">
           <div className="advisor-image-group">
             <div className="advisor-image advisor-3">
-              <img src="/api/placeholder/70/70" alt="Advisor" />
+              <img
+                src="	https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png"
+                alt="Advisor"
+              />
             </div>
             <div className="advisor-image advisor-4">
-              <img src="/api/placeholder/70/70" alt="Advisor" />
+              <img
+                src="	https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png"
+                alt="Advisor"
+              />
             </div>
             <div className="advisor-image advisor-5">
-              <img src="/api/placeholder/70/70" alt="Advisor" />
+              <img
+                src="	https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png"
+                alt="Advisor"
+              />
             </div>
           </div>
         </div>
@@ -31,7 +40,7 @@ function CTABanner() {
           <h2 className="cta-heading">
             Book a call with an advisor by May 15th
             <br />
-            to take <span className="discount-badge">25% off</span> your
+            to take <span className="discount-badge-cta">25% off</span> your
             tuition!
           </h2>
           <a href="#book-call" className="cta-button">

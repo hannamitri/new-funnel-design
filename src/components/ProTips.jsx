@@ -9,13 +9,14 @@ function ResourcesSection() {
     description:
       "Women in tech are breaking barriers and redefining the industry. This IWD, celebrate their bold career moves, resilience, and success with us.",
     images: [
-      "/api/placeholder/80/80",
-      "/api/placeholder/80/80",
-      "/api/placeholder/80/80",
-      "/api/placeholder/80/80",
-      "/api/placeholder/80/80",
+      "	https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png",
+      "	https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png",
+      "	https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png",
+      "	https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png",
+      "	https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png",
     ],
-    mainImage: "/api/placeholder/300/300",
+    mainImage:
+      "https://tripleten.com/usa-assets/usa-main/tild3762-3634-4862-a631-646164616332__5ce3ef103d1a2e0716ce.jpg",
     hasVideo: true,
   };
 
@@ -24,21 +25,24 @@ function ResourcesSection() {
       id: 1,
       date: "7/01/2025",
       title: "How to Switch into Tech at 50",
-      image: "/api/placeholder/350/200",
+      image:
+        "https://tripleten.com/usa-assets/usa-main/tild3762-3634-4862-a631-646164616332__5ce3ef103d1a2e0716ce.jpg",
       url: "#article-1",
     },
     {
       id: 2,
       date: "3/18/2025",
       title: "Let's Talk About the Outcomes Report",
-      image: "/api/placeholder/350/200",
+      image:
+        "https://tripleten.com/usa-assets/usa-main/tild3762-3634-4862-a631-646164616332__5ce3ef103d1a2e0716ce.jpg",
       url: "#article-2",
     },
     {
       id: 3,
       date: "",
       title: "Choosing Tech to Balance Parenthood and Work",
-      image: "/api/placeholder/350/200",
+      image:
+        "https://tripleten.com/usa-assets/usa-main/tild3762-3634-4862-a631-646164616332__5ce3ef103d1a2e0716ce.jpg",
       url: "#article-3",
     },
   ];

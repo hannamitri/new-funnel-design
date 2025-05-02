@@ -50,17 +50,17 @@ function BookingForm() {
           {/* Advisor Images */}
           <div className="advisor-images">
             <img
-              src="/api/placeholder/80/80"
+              src="	https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png"
               alt="Advisor 1"
               className="advisor-img"
             />
             <img
-              src="/api/placeholder/80/80"
+              src="	https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png"
               alt="Advisor 2"
               className="advisor-img"
             />
             <img
-              src="/api/placeholder/80/80"
+              src="	https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png"
               alt="Advisor 3"
               className="advisor-img"
             />
@@ -70,7 +70,7 @@ function BookingForm() {
           <h2 className="booking-heading">
             Book a call with an advisor
             <br />
-            by May 15th to take <span className="discount-badge">25% off</span>
+            by May 15th to take <span className="discount-badge-booking">25% off</span>
             <br />
             your tuition!
           </h2>
