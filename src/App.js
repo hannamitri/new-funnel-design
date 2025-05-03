@@ -14,25 +14,41 @@ import FAQ from "./components/FAQ.jsx";
 import Footer from "./components/Footer.jsx";
 import PromotionBanner from "./components/PromotionBanner.jsx";
 import Featured from "./components/Featured.jsx";
+import PromoBannerBottom from "./components/PromotionBannerBottom.jsx";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [showBanner, setShowBanner] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBanner(window.scrollY <= 20); // Show when near top
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div>
-      <Navbar />
-      <PromotionBanner />
-      <Hero />
-      <Featured />
-      <JobGuarantee />
-      <CTA />
-      <Pricing />
-      <HowWeWork />
-      <Alumni />
-      <Employer />
-      <ProTips />
-      <BookingForm />
-      <FAQ />
-      <Footer />
-    </div>
+    <>
+      <div>
+        <Navbar />
+        <PromotionBanner />
+        <Hero />
+        <Featured />
+        <JobGuarantee />
+        <CTA />
+        <Pricing />
+        <HowWeWork />
+        <Alumni />
+        <Employer />
+        <ProTips />
+        <BookingForm />
+        <FAQ />
+        <Footer />
+      </div>
+      {/* <PromoBannerBottom visible={showBanner} /> */}
+    </>
   );
 }
 

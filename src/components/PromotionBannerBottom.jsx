@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 
-export default function PromoBanner() {
+export default function PromoBannerBottom({ visible }) {
   const [showBanner, setShowBanner] = useState(null);
   const [timeLeft, setTimeLeft] = useState({
-      days: 13,
-      hours: 19,
-      minutes: 15,
-      seconds: 15,
-    });
+    days: 13,
+    hours: 19,
+    minutes: 15,
+    seconds: 15,
+  });
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -45,8 +45,17 @@ export default function PromoBanner() {
     return () => clearInterval(timer);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBanner(window.scrollY <= 20); 
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="promo-banner">
+    <div className={`promo-banner-bottom ${showBanner ? "visible" : "hidden"}`}>
       <div className="banner-content">
         <h1 className="banner-heading">Graduate into a career you'll love!</h1>
 
