@@ -168,9 +168,9 @@ function ProgramsPricing() {
         {/* Career Quiz Section */}
         <div className="career-quiz-section">
           <div className="quiz-content">
-            <div className="quiz-icon-left">
+            {/* <div className="quiz-icon-left">
               <img src="/api/placeholder/60/60" alt="Lightbulb icon" />
-            </div>
+            </div> */}
 
             <div className="quiz-text">
               <h3 className="quiz-title">Not sure? Take a career quiz</h3>
@@ -180,9 +180,9 @@ function ProgramsPricing() {
               </a>
             </div>
 
-            <div className="quiz-icon-right">
+            {/* <div className="quiz-icon-right">
               <img src="/api/placeholder/60/60" alt="Question mark icon" />
-            </div>
+            </div> */}
           </div>
         </div>
 

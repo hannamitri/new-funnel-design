@@ -62,13 +62,13 @@ function HowWeWork() {
           </div>
         </div>
 
-        <div className="illustration-container">
+        {/* <div className="illustration-container">
           <img
             src="	https://tripleten.com/usa-assets/usa-main/tild3365-3730-4632-b566-633730636538__ellipse_150_1.png"
             alt="Learning journey illustration showing a student with laptop and various coding elements"
             className="journey-illustration"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
