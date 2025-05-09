@@ -1,0 +1,138 @@
+/* Course Pace Selection Component Styles */
+
+.pace-selection {
+  margin: var(--spacing-lg) auto;
+  font-family: var(--font-family);
+}
+
+.pace-selection__title {
+  text-align: center;
+  font-size: var(--font-size-4xl);
+  color: var(--dark);
+  margin-bottom: var(--spacing-xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pace-selection__options {
+  display: flex;
+  gap: var(--spacing-lg);
+  justify-content: center;
+}
+
+.pace-selection__option {
+  flex: 1;
+  background-color: white;
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--grey-light);
+  cursor: pointer;
+  transition: var(--transition);
+  max-width: 450px;
+}
+
+.pace-selection__option:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.pace-selection__option--selected {
+  border: 1px solid var(--primary);
+}
+
+.pace-selection__option-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.pace-selection__option-title {
+  font-size: var(--font-size-2xl);
+  color: var(--dark);
+  margin: 0;
+}
+
+.pace-selection__recommended {
+  background-color: var(--success);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-full);
+  font-size: var(--font-size-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.pace-selection__recommended-icon {
+  font-weight: bold;
+}
+
+.pace-selection__option-detail {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--grey-light);
+  gap: var(--spacing-xs);
+}
+
+.pace-selection__icon {
+  font-size: var(--font-size-xl);
+}
+
+.pace-selection__highlight {
+  font-weight: 600;
+}
+
+.pace-selection__highlight--structured {
+  color: var(--primary);
+}
+
+.pace-selection__highlight--flexible {
+  color: var(--secondary);
+}
+
+.pace-selection__highlight--day {
+  color: var(--success);
+}
+
+.pace-selection__highlight--months {
+  color: var(--warning);
+}
+
+.pace-selection__bullet-list {
+  list-style-type: disc;
+  padding-left: var(--spacing-xl);
+  margin: var(--spacing-md) 0;
+}
+
+.pace-selection__bullet-list li {
+  margin-bottom: var(--spacing-sm);
+}
+
+.pace-selection__option-tag {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  font-weight: 500;
+}
+
+.pace-selection__icon--tag {
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .pace-selection__options {
+    flex-direction: column;
+  }
+
+  .pace-selection__option {
+    max-width: 100%;
+  }
+
+  .pace-selection__title {
+    font-size: var(--font-size-3xl);
+  }
+}

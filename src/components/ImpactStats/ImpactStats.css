@@ -1,0 +1,180 @@
+/* Intro Section */
+.software-page__intro {
+  background: radial-gradient(
+    50.94% 50.94% at 50% 50%,
+    var(--primary-light) 12.62%,
+    #fff4ef
+  );
+  padding: var(--spacing-lg);
+}
+
+.software-page__intro-title {
+  font-size: var(--font-size-4xl);
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: var(--spacing-xl);
+}
+
+.software-page__logo-text {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.software-page__small-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.software-page__benefits {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xxl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.software-page__benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+}
+
+.software-page__benefit-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: var(--border-radius-full);
+  background-color: var(--dark);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.software-page__benefit-text {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.software-page__disclaimer {
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--grey);
+  margin-bottom: var(--spacing-xxl);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.software-page__link {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.software-page__career-info {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.software-page__image-container {
+  flex: 0 0 38%;
+}
+
+.software-page__developer-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+}
+
+.software-page__essential-profession {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.software-page__career-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-lg);
+}
+
+.software-page__career-description {
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+}
+
+.software-page__job-stats {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: end;
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  gap: var(--spacing-lg);
+}
+
+.software-page__salary-info {
+  display: flex;
+  flex: 0.5;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.software-page__salary {
+  margin-bottom: var(--spacing-sm);
+}
+
+.software-page__salary-amount {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.software-page__salary-description {
+  font-weight: 500;
+  margin-bottom: var(--spacing-xs);
+}
+
+.software-page__salary-bar {
+  height: 6px;
+  border-radius: var(--border-radius-full);
+  background-color: var(--secondary);
+  margin-top: var(--spacing-xs);
+}
+
+.software-page__salary-bar--short {
+  width: 60%;
+}
+
+.software-page__salary-bar--long {
+  width: 85%;
+}
+
+.software-page__salary-source {
+  font-size: var(--font-size-sm);
+  color: var(--grey);
+  margin-top: var(--spacing-sm);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .software-page__benefits {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+
+  .software-page__career-info {
+    flex-direction: column;
+  }
+
+  .software-page__image-container {
+    flex: 0 0 100%;
+  }
+}

@@ -70,7 +70,8 @@ function BookingForm() {
           <h2 className="booking-heading">
             Book a call with an advisor
             <br />
-            by May 15th to take <span className="discount-badge-booking">25% off</span>
+            by May 15th to take{" "}
+            <span className="discount-badge-booking">25% off</span>
             <br />
             your tuition!
           </h2>

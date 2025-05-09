@@ -26,28 +26,76 @@ export default function Nav() {
   };
 
   const programsDropdownItems = [
-    "Web Development",
-    "Data Science",
-    "UX/UI Design",
-    "Digital Marketing",
-    "Cybersecurity",
+    {
+      item: "Web Development",
+      href: "/software-engineer",
+    },
+    {
+      item: "Data Science",
+      href: "/software-engineer",
+    },
+    {
+      item: "UX/UI Design",
+      href: "/software-engineer",
+    },
+    {
+      item: "Digital Marketing",
+      href: "/software-engineer",
+    },
+    {
+      item: "Cybersecurity",
+      href: "/software-engineer",
+    },
   ];
 
   const whyUsDropdownItems = [
-    "2025 Outcomes report",
-    "Flexible payment options",
-    "1000+ successful graduates",
-    "Real industry experience",
-    "One-on-one support",
-    "Student reviews",
+    {
+      item: "2025 Outcomes report",
+      href: "/student-reviews",
+    },
+    {
+      item: "Flexible payment options",
+      href: "/student-reviews",
+    },
+    {
+      item: "1000+ successful graduates",
+      href: "/student-reviews",
+    },
+    {
+      item: "Real industry experience",
+      href: "/student-reviews",
+    },
+    {
+      item: "One-on-one support",
+      href: "/student-reviews",
+    },
+    {
+      item: "Student reviews",
+      href: "/student-reviews",
+    },
   ];
 
   const resourcesDropdownItems = [
-    "Blog",
-    "Tutorials",
-    "Free courses",
-    "Documentation",
-    "Career advice",
+    {
+      item: "Blog",
+      href: "/blog",
+    },
+    {
+      item: "Tutorials",
+      href: "/career",
+    },
+    {
+      item: "Free courses",
+      href: "/career",
+    },
+    {
+      item: "Documentation",
+      href: "/career",
+    },
+    {
+      item: "Career advice",
+      href: "/career",
+    },
   ];
 
   return (
@@ -89,8 +137,8 @@ export default function Nav() {
               {activeDropdown === "programs" && (
                 <div className="dropdown-menu">
                   {programsDropdownItems.map((item, index) => (
-                    <a key={index} href="#" className="dropdown-item">
-                      {item}
+                    <a key={index} href={item.href} className="dropdown-item">
+                      {item.item}
                     </a>
                   ))}
                 </div>
@@ -117,8 +165,8 @@ export default function Nav() {
               {activeDropdown === "why-us" && (
                 <div className="dropdown-menu">
                   {whyUsDropdownItems.map((item, index) => (
-                    <a key={index} href="#" className="dropdown-item">
-                      {item}
+                    <a key={index} href={item.href} className="dropdown-item">
+                      {item.item}
                     </a>
                   ))}
                 </div>
@@ -145,8 +193,8 @@ export default function Nav() {
               {activeDropdown === "resources" && (
                 <div className="dropdown-menu">
                   {resourcesDropdownItems.map((item, index) => (
-                    <a key={index} href="#" className="dropdown-item">
-                      {item}
+                    <a key={index} href={item.href} className="dropdown-item">
+                      {item.item}
                     </a>
                   ))}
                 </div>
@@ -154,7 +202,7 @@ export default function Nav() {
             </li>
 
             <li>
-              <a href="#about">About</a>
+              <a href="/blog">Blog</a>
             </li>
           </ul>
           <div className="buttons-wrapper">
@@ -228,8 +276,8 @@ export default function Nav() {
                   </li>
                   <li className="burger-modal-link-wrapper">
                     <h1>Resources</h1>
-                    <a className="burger-modal-link" href="#programs">
-                      About TripleTen
+                    <a className="burger-modal-link" href="/blog">
+                      About FES
                     </a>
                     <a className="burger-modal-link" href="#programs">
                       FAQ

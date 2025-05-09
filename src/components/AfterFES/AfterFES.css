@@ -1,0 +1,221 @@
+/* After FES Component Styles */
+
+.after-FES {
+  padding: var(--spacing-lg);
+  background-color: var(--light);
+  border-radius: var(--border-radius-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.after-FES__title {
+  font-size: var(--font-size-4xl);
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: var(--spacing-xl);
+}
+
+.after-FES__content {
+  display: flex;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.after-FES__profile {
+  display: flex;
+  gap: var(--spacing-lg);
+  flex: 0 0 30%;
+}
+
+.after-FES__avatar-container {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: var(--border-radius-full);
+}
+
+.after-FES__avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.after-FES__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.after-FES__role {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.after-FES__social {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.after-FES__social-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.after-FES__social-link--linkedin {
+  color: #0077b5;
+}
+
+.after-FES__social-link--github {
+  color: #333;
+}
+
+.after-FES__social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--border-radius-sm);
+  background-color: currentColor;
+  color: white;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+}
+
+.after-FES__details {
+  display: flex;
+  flex: 1;
+  gap: var(--spacing-xl);
+}
+
+.after-FES__column {
+  flex: 1;
+}
+
+.after-FES__column-title {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-md);
+  color: var(--grey);
+}
+
+.after-FES__education {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.after-FES__school {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+}
+
+.after-FES__period {
+  color: var(--grey);
+}
+
+.after-FES__salary {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+}
+
+.after-FES__skills-container {
+  display: flex;
+  gap: var(--spacing-xl);
+}
+
+.after-FES__skills-column {
+  flex: 1;
+}
+
+.after-FES__skills-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.after-FES__skill-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-sm);
+  background-color: var(--grey-light);
+}
+
+.after-FES__skill-badge--html {
+  background-color: #f6e9e7;
+  color: #e44d26;
+}
+
+.after-FES__skill-badge--css {
+  background-color: #e7f0f6;
+  color: #264de4;
+}
+
+.after-FES__skill-badge--js {
+  background-color: #f7f1da;
+  color: #f7df1e;
+}
+
+.after-FES__skill-badge--git {
+  background-color: #f6e9e7;
+  color: #f05032;
+}
+
+.after-FES__skill-badge--github {
+  background-color: #e9eaeb;
+  color: #333;
+}
+
+.after-FES__skill-badge--react {
+  background-color: #e7f6f9;
+  color: #61dafb;
+}
+
+.after-FES__skill-badge--node {
+  background-color: #e7f6e7;
+  color: #339933;
+}
+
+.after-FES__skill-badge--mongodb {
+  background-color: #e7f6e7;
+  color: #47a248;
+}
+
+.after-FES__skill-badge--soft {
+  background-color: var(--grey-light);
+  color: var(--grey);
+}
+
+.after-FES__project-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.after-FES__project-description {
+  color: var(--grey);
+  line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .after-FES__content {
+    flex-direction: column;
+  }
+
+  .after-FES__details {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .after-FES__skills-container {
+    flex-direction: column;
+    gap: var(--spacing-xl);
+  }
+}

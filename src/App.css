@@ -874,7 +874,6 @@ button {
     height: 800px; /* Fixed height */
     width: 95%; /* Responsive width */
   }
-
 }
 
 /* Featured Section */
@@ -2264,7 +2263,8 @@ PROMOTION BANNER
 /* Employers Section Styles */
 
 .employers-section {
-  padding: 5rem 0;
+   padding: var(--spacing-lg);
+  margin: var(--spacing-lg) auto;
   background-color: #fff;
   position: relative;
 }
@@ -3218,7 +3218,7 @@ PROMOTION BANNER
 /* Footer Styles */
 
 .site-footer {
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   padding: 5rem 0 2rem;
   color: #111;
   border-top: 1px solid #eee;
@@ -4053,6 +4053,8 @@ PROMOTION BANNER
   gap: var(--spacing-lg);
   margin-bottom: var(--spacing-xl);
 }
+
+/* Software Engineer Page Styles */
 
 /* .resource-card {
   background-color: white;

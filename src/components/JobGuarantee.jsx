@@ -46,7 +46,7 @@ function JobGuaranteeSection() {
               If it takes more than 10 months after completing your program to
               get the job you trained for, we will refund 100% of your tuition.
             </p>
-            <a href="#" className="card-link">
+            <a href="/blog" className="card-link">
               About <ArrowRight size={16} />
             </a>
           </div>

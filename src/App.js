@@ -1,5 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CTA from "./components/CTA.jsx";
 import Hero from "./components/Hero.jsx";
 import Navbar from "./components/Navbar.jsx";
@@ -14,8 +14,11 @@ import FAQ from "./components/FAQ.jsx";
 import Footer from "./components/Footer.jsx";
 import PromotionBanner from "./components/PromotionBanner.jsx";
 import Featured from "./components/Featured.jsx";
-import PromoBannerBottom from "./components/PromotionBannerBottom.jsx";
+import FrontEnd from "./components/FrontEnd/FrontEnd.jsx";
 import { useState, useEffect } from "react";
+import StudentReviews from "./components/StudentReviews/StudentReviews.jsx";
+import Blog from "./components/Blog/Blog.jsx";
+import Career from "./components/Career/Career.jsx";
 
 function App() {
   const [showBanner, setShowBanner] = useState(true);
@@ -30,25 +33,28 @@ function App() {
   }, []);
 
   return (
-    <>
-      <div>
-        <Navbar />
-        <PromotionBanner />
-        <Hero />
-        <Featured />
-        <JobGuarantee />
-        <CTA />
-        <Pricing />
-        <HowWeWork />
-        <Alumni />
-        <Employer />
-        <ProTips />
-        <BookingForm />
-        <FAQ />
-        <Footer />
-      </div>
-      {/* <PromoBannerBottom visible={showBanner} /> */}
-    </>
+    <Router>
+      <Navbar />
+      {showBanner && <PromotionBanner />}
+      <Routes>
+        <Route path="/software-engineer" element={<FrontEnd />} />
+        <Route path="/student-reviews" element={<StudentReviews />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/" element={<Hero />} />
+        <Route path="/" element={<Featured />} />
+        <Route path="/" element={<JobGuarantee />} />
+        <Route path="/" element={<CTA />} />
+        <Route path="/" element={<Pricing />} />
+        <Route path="/" element={<HowWeWork />} />
+        <Route path="/" element={<Alumni />} />
+        <Route path="/" element={<Employer />} />
+        <Route path="/" element={<ProTips />} />
+        <Route path="/" element={<BookingForm />} />
+        <Route path="/" element={<FAQ />} />
+        <Route path="/" element={<Footer />} />
+      </Routes>
+    </Router>
   );
 }
 

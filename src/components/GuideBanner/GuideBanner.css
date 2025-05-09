@@ -1,0 +1,96 @@
+/* Guide Banner Styles */
+
+.guide-banner {
+  background-color: #6eca8d; /* Green background */
+  border-radius: 16px;
+  padding: 48px;
+}
+
+.guide-banner__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.guide-banner__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guide-banner__title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  max-width: 600px;
+}
+
+.guide-banner__subtitle {
+  font-size: 18px;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 32px;
+  max-width: 400px;
+}
+
+.guide-banner__button {
+  background-color: #1e1e1e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.guide-banner__button:hover {
+  background-color: #333333;
+}
+
+.guide-banner__image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.guide-banner__checklist {
+  max-width: 100%;
+  height: 400px;
+  position: relative;
+  top: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .guide-banner {
+    padding: 32px;
+  }
+
+  .guide-banner__content {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .guide-banner__title {
+    font-size: 32px;
+  }
+
+  .guide-banner__image {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .guide-banner__checklist {
+    max-width: 350px;
+  }
+}

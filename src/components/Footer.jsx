@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Facebook,
-  Instagram,
-  Youtube,
-  Twitter,
-  Linkedin,
-} from "lucide-react";
+import { Facebook, Instagram, Youtube, Twitter, Linkedin } from "lucide-react";
 // import { FaTiktok } from "react-icons/fa";
 
 function Footer() {
@@ -74,7 +68,7 @@ function Footer() {
                 <a href="/comparison">Comparison</a>
               </li>
               <li>
-                <a href="/reviews">Student reviews</a>
+                <a href="/student-reviews">Student reviews</a>
               </li>
             </ul>
           </div>
@@ -84,7 +78,7 @@ function Footer() {
             <h3 className="footer-heading">About FES</h3>
             <ul className="footer-links">
               <li>
-                <a href="/about">About</a>
+                <a href="/blog">Blog</a>
               </li>
               <li>
                 <a href="/faq">FAQ</a>

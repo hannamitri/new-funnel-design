@@ -1,0 +1,198 @@
+/* Career Registration Section Styles */
+
+.career {
+  background-color: #6eca8d; /* Green background */
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  font-family: var(--font-family);
+  margin: var(--spacing-xl) 0;
+}
+
+.career__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+/* Left side - Promo content */
+.career__promo {
+  flex: 1;
+  position: relative;
+}
+
+.career__tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffd580; /* Light orange/yellow */
+  color: var(--dark);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  position: absolute;
+  top: var(--spacing-md);
+  left: var(--spacing-md);
+  z-index: 2;
+}
+
+.career__heart-icon {
+  margin-right: var(--spacing-xs);
+}
+
+.career__image-container {
+  position: relative;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  margin-bottom: var(--spacing-md);
+}
+
+.career__image {
+  width: 100%;
+  display: block;
+  border-radius: var(--border-radius-md);
+}
+
+.career__title-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: var(--spacing-lg);
+}
+
+.career__title {
+  font-size: var(--font-size-3xl);
+  color: var(--dark);
+  background-color: white;
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  line-height: 1.2;
+  margin: 0;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.career__timer {
+  position: absolute;
+  bottom: var(--spacing-md);
+  right: var(--spacing-md);
+  background-color: var(--primary); /* Light orange/yellow */
+  color: var(--dark);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.career__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--dark);
+  text-align: center;
+  margin-top: var(--spacing-md);
+  font-weight: bold;
+}
+
+/* Right side - Form */
+.career__form-container {
+  flex: 1;
+  background-color: white;
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-xl);
+}
+
+.career__form-title {
+  font-size: var(--font-size-xl);
+  color: var(--dark);
+  margin-top: 0;
+  margin-bottom: var(--spacing-lg);
+}
+
+.career__input-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.career__input {
+  width: 100%;
+  padding: var(--spacing-md);
+  border: 1px solid var(--grey-light);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-md);
+}
+
+.career__checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-lg);
+}
+
+.career__checkbox {
+  margin-top: 4px;
+  margin-right: var(--spacing-sm);
+}
+
+.career__checkbox-label {
+  font-size: var(--font-size-xs);
+  color: var(--grey);
+  line-height: 1.4;
+}
+
+.career__link {
+  color: var(--primary); /* Orange link color */
+  text-decoration: none;
+}
+
+.career__link:hover {
+  text-decoration: underline;
+}
+
+.career__button {
+  width: 100%;
+  background-color: #1e293b; /* Dark background */
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-bottom: var(--spacing-md);
+}
+
+.career__button:hover {
+  background-color: #334155; /* Slightly lighter on hover */
+}
+
+.career__disclaimer {
+  font-size: var(--font-size-xs);
+  color: var(--grey);
+  text-align: center;
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .career__content {
+    flex-direction: column;
+  }
+
+  .career__promo,
+  .career__form-container {
+    width: 100%;
+  }
+
+  .career__title {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .career {
+    padding: var(--spacing-md);
+  }
+
+  .career__form-container {
+    padding: var(--spacing-lg);
+  }
+}

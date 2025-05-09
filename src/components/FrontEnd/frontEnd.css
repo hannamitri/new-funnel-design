@@ -1,0 +1,555 @@
+.software-page {
+  font-family: var(--font-family);
+  color: var(--dark);
+  background-color: #fff4ef;
+}
+
+.software-page-wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+/* Header Section */
+.software-page__header {
+  background-color: #fff4ef; /* Light peach background from the image */
+  padding: var(--spacing-xl) 0;
+}
+
+.software-page__hero {
+  display: flex;
+  gap: var(--spacing-xl);
+}
+
+/* Profile Section */
+.software-page__info {
+  flex: 0 0 33%;
+}
+
+.software-page__profile {
+  background-color: var(--primary-light);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+}
+
+.software-page__profile-image {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* Maintain aspect ratio */
+  overflow: hidden;
+}
+
+.software-page__profile-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.software-page__play-button {
+  position: absolute;
+  bottom: var(--spacing-lg);
+  left: var(--spacing-lg);
+  width: 60px;
+  height: 60px;
+  background-color: var(--success);
+  border-radius: var(--border-radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.software-page__play-icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 16px;
+  border-color: transparent transparent transparent white;
+  margin-left: 4px;
+}
+
+.software-page__profile-details {
+  padding: var(--spacing-lg);
+}
+
+.software-page__profile-name {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  font-weight: 500;
+}
+
+.software-page__profile-career {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.software-page__career-item {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.software-page__career-label {
+  color: var(--grey);
+  width: 70px;
+}
+
+.software-page__career-value {
+  font-weight: 500;
+}
+
+/* Content Section */
+.software-page__content {
+  flex: 1;
+}
+
+.software-page__badges {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.software-page__badge {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.software-page__badge--part-time {
+  background-color: #d1fae5; /* Light green */
+  color: #065f46;
+}
+
+.software-page__badge--full-time {
+  background-color: #dbeafe; /* Light blue */
+  color: #1e40af;
+}
+
+.software-page__badge--guarantee {
+  background-color: #d1fae5; /* Light green */
+  color: #065f46;
+}
+
+.software-page__title {
+  font-size: var(--font-size-5xl);
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: var(--spacing-lg);
+}
+
+.software-page__description {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-xl);
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.software-page__cta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.software-page__button {
+  background-color: var(--dark);
+  color: white;
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--border-radius-md);
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: var(--transition);
+}
+
+.software-page__button:hover {
+  background-color: black;
+}
+
+.software-page__cohort {
+  background-color: #fef3c7; /* Light yellow */
+  color: #92400e;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  font-weight: 500;
+  position: relative;
+}
+
+.software-page__cohort::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 12px 8px 0;
+  border-color: transparent #fef3c7 transparent transparent;
+}
+
+/* Main Content */
+.software-page__main {
+  padding: var(--spacing-xxl) 0;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .software-page__hero {
+    flex-direction: column;
+  }
+
+  .software-page__info {
+    flex: 0 0 100%;
+  }
+
+  .software-page__profile-image {
+    padding-bottom: 60%; /* Different aspect ratio for mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .software-page__badges {
+    flex-wrap: wrap;
+  }
+
+  .software-page__title {
+    font-size: var(--font-size-4xl);
+  }
+
+  .software-page__description {
+    font-size: var(--font-size-lg);
+  }
+
+  .software-page__cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Software Engineer Page Styles */
+
+.software-page {
+  font-family: var(--font-family);
+  color: var(--dark);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+/* Header Section */
+.software-page__header {
+  background-color: #fff4ef; /* Light peach background from the image */
+  padding: var(--spacing-xl) 0;
+}
+
+.software-page__hero {
+  display: flex;
+  gap: var(--spacing-xl);
+}
+
+/* Profile Section */
+.software-page__info {
+  flex: 0 0 33%;
+}
+
+.software-page__profile {
+  background-color: var(--primary-light);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+}
+
+.software-page__profile-image {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* Maintain aspect ratio */
+  overflow: hidden;
+}
+
+.software-page__profile-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.software-page__play-button {
+  position: absolute;
+  bottom: var(--spacing-lg);
+  left: var(--spacing-lg);
+  width: 60px;
+  height: 60px;
+  background-color: var(--success);
+  border-radius: var(--border-radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.software-page__play-icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 16px;
+  border-color: transparent transparent transparent white;
+  margin-left: 4px;
+}
+
+.software-page__profile-details {
+  padding: var(--spacing-lg);
+}
+
+.software-page__profile-name {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  font-weight: 500;
+}
+
+.software-page__profile-career {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.software-page__career-item {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.software-page__career-label {
+  color: var(--grey);
+  width: 70px;
+}
+
+.software-page__career-value {
+  font-weight: 500;
+}
+
+/* Content Section */
+.software-page__content {
+  flex: 1;
+}
+
+.software-page__badges {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.software-page__badge {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.software-page__badge--part-time {
+  background-color: #d1fae5; /* Light green */
+  color: #065f46;
+}
+
+.software-page__badge--full-time {
+  background-color: #dbeafe; /* Light blue */
+  color: #1e40af;
+}
+
+.software-page__badge--guarantee {
+  background-color: #d1fae5; /* Light green */
+  color: #065f46;
+}
+
+.software-page__title {
+  font-size: var(--font-size-5xl);
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: var(--spacing-lg);
+}
+
+.software-page__description {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-xl);
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.software-page__cta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.software-page__button {
+  background-color: var(--dark);
+  color: white;
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--border-radius-md);
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: var(--transition);
+}
+
+.software-page__button:hover {
+  background-color: black;
+}
+
+.software-page__cohort {
+  background-color: #fef3c7; /* Light yellow */
+  color: #92400e;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  font-weight: 500;
+  position: relative;
+}
+
+.software-page__cohort::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 12px 8px 0;
+  border-color: transparent #fef3c7 transparent transparent;
+}
+
+/* Main Content */
+.software-page__main {
+  padding: var(--spacing-xl) 0;
+}
+
+/* Awards Section */
+.software-page__awards {
+  position: relative;
+}
+
+.software-page__badges-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-md);
+  position: relative;
+  top: 50px;
+  z-index: 2;
+}
+
+.software-page__award-badge {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.software-page__award-badge img {
+  width: 100%;
+  height: auto;
+}
+
+/* Value Proposition Section */
+.software-page__value-prop {
+  background-color: white;
+  text-align: center;
+  margin-bottom: var(--spacing-xxl);
+  padding: var(--spacing-xxl) var(--spacing-lg);
+  border-radius: 8px;
+}
+
+.software-page__value-title {
+  font-size: var(--font-size-4xl);
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: var(--spacing-xxl);
+}
+
+.software-page__stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xxl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.software-page__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.software-page__stat-number {
+  font-size: var(--font-size-5xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+.software-page__stat-description {
+  font-size: var(--font-size-md);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.software-page__outcomes {
+  background-color: var(--grey-light);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  display: inline-block;
+}
+
+.software-page__outcomes p {
+  color: var(--grey);
+  font-size: var(--font-size-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.software-page__link-icon {
+  font-size: var(--font-size-lg);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .software-page__hero {
+    flex-direction: column;
+  }
+
+  .software-page__info {
+    flex: 0 0 100%;
+  }
+
+  .software-page__profile-image {
+    padding-bottom: 60%; /* Different aspect ratio for mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .software-page__badges {
+    flex-wrap: wrap;
+  }
+
+  .software-page__title {
+    font-size: var(--font-size-4xl);
+  }
+
+  .software-page__description {
+    font-size: var(--font-size-lg);
+  }
+
+  .software-page__cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

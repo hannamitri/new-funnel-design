@@ -1,0 +1,89 @@
+/* TechStart Podcast Banner Styles */
+
+.podcast-banner {
+  display: flex;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.podcast-banner__content {
+  flex: 1;
+  padding: var(--spacing-xl);
+  background-color: #b392e0; /* Purple background */
+  background-image: linear-gradient(
+    to bottom right,
+    #c4a4e9,
+    #a580d7
+  ); /* Subtle gradient */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.podcast-banner__title {
+  font-size: var(--font-size-4xl);
+  color: var(--dark);
+  margin-bottom: var(--spacing-lg);
+  font-weight: 700;
+}
+
+.podcast-banner__description {
+  font-size: var(--font-size-lg);
+  color: var(--dark);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-xl);
+  max-width: 450px;
+}
+
+.podcast-banner__button {
+  display: inline-block;
+  background-color: #1e293b; /* Dark background */
+  color: white;
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--border-radius-md);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+  align-self: flex-start;
+}
+
+.podcast-banner__button:hover {
+  background-color: #334155; /* Slightly lighter on hover */
+  box-shadow: var(--shadow-sm);
+}
+
+.podcast-banner__image-container {
+  flex: 1;
+  background-color: #1e1e1e; /* Dark background for the image side */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.podcast-banner__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .podcast-banner {
+    flex-direction: column;
+  }
+
+  .podcast-banner__content {
+    padding: var(--spacing-lg);
+  }
+
+  .podcast-banner__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .podcast-banner__image-container {
+    height: 250px;
+  }
+}
