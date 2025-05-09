@@ -21,21 +21,8 @@ import Blog from "./components/Blog/Blog.jsx";
 import Career from "./components/Career/Career.jsx";
 
 function App() {
-  const [showBanner, setShowBanner] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowBanner(window.scrollY <= 20); // Show when near top
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <Router>
-      <Navbar />
-      {showBanner && <PromotionBanner />}
       <Routes>
         <Route path="/software-engineer" element={<FrontEnd />} />
         <Route path="/student-reviews" element={<StudentReviews />} />

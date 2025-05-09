@@ -25,50 +25,54 @@ export default function Nav() {
     setActiveDropdown((prev) => (prev === dropdown ? null : dropdown));
   };
 
+  const untoggleDropdown = () => {
+    setActiveDropdown(null);
+  };
+
   const programsDropdownItems = [
     {
       item: "Web Development",
       href: "/software-engineer",
     },
-    {
-      item: "Data Science",
-      href: "/software-engineer",
-    },
-    {
-      item: "UX/UI Design",
-      href: "/software-engineer",
-    },
-    {
-      item: "Digital Marketing",
-      href: "/software-engineer",
-    },
-    {
-      item: "Cybersecurity",
-      href: "/software-engineer",
-    },
+    // {
+    //   item: "Data Science",
+    //   href: "/software-engineer",
+    // },
+    // {
+    //   item: "UX/UI Design",
+    //   href: "/software-engineer",
+    // },
+    // {
+    //   item: "Digital Marketing",
+    //   href: "/software-engineer",
+    // },
+    // {
+    //   item: "Cybersecurity",
+    //   href: "/software-engineer",
+    // },
   ];
 
   const whyUsDropdownItems = [
-    {
-      item: "2025 Outcomes report",
-      href: "/student-reviews",
-    },
-    {
-      item: "Flexible payment options",
-      href: "/student-reviews",
-    },
-    {
-      item: "1000+ successful graduates",
-      href: "/student-reviews",
-    },
-    {
-      item: "Real industry experience",
-      href: "/student-reviews",
-    },
-    {
-      item: "One-on-one support",
-      href: "/student-reviews",
-    },
+    // {
+    //   item: "2025 Outcomes report",
+    //   href: "/student-reviews",
+    // },
+    // {
+    //   item: "Flexible payment options",
+    //   href: "/student-reviews",
+    // },
+    // {
+    //   item: "1000+ successful graduates",
+    //   href: "/student-reviews",
+    // },
+    // {
+    //   item: "Real industry experience",
+    //   href: "/student-reviews",
+    // },
+    // {
+    //   item: "One-on-one support",
+    //   href: "/student-reviews",
+    // },
     {
       item: "Student reviews",
       href: "/student-reviews",
@@ -80,18 +84,18 @@ export default function Nav() {
       item: "Blog",
       href: "/blog",
     },
-    {
-      item: "Tutorials",
-      href: "/career",
-    },
-    {
-      item: "Free courses",
-      href: "/career",
-    },
-    {
-      item: "Documentation",
-      href: "/career",
-    },
+    // {
+    //   item: "Tutorials",
+    //   href: "/career",
+    // },
+    // {
+    //   item: "Free courses",
+    //   href: "/career",
+    // },
+    // {
+    //   item: "Documentation",
+    //   href: "/career",
+    // },
     {
       item: "Career advice",
       href: "/career",
@@ -117,15 +121,18 @@ export default function Nav() {
             </div>
           </div>
           <ul className="nav__links">
-            <li className="dropdown">
-              <a
-                href="#programs"
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleDropdown("programs");
-                }}
-                className="dropdown-toggle"
-              >
+            <li
+              className="dropdown"
+              onMouseEnter={(e) => {
+                e.preventDefault();
+                toggleDropdown("programs");
+              }}
+              onMouseLeave={(e) => {
+                e.preventDefault();
+                untoggleDropdown();
+              }}
+            >
+              <a href="#programs" className="dropdown-toggle">
                 Programs
                 <ChevronDown
                   size={16}
@@ -145,15 +152,18 @@ export default function Nav() {
               )}
             </li>
 
-            <li className="dropdown">
-              <a
-                href="#why-us"
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleDropdown("why-us");
-                }}
-                className="dropdown-toggle"
-              >
+            <li
+              className="dropdown"
+              onMouseEnter={(e) => {
+                e.preventDefault();
+                toggleDropdown("why-us");
+              }}
+              onMouseLeave={(e) => {
+                e.preventDefault();
+                untoggleDropdown();
+              }}
+            >
+              <a href="#why-us" className="dropdown-toggle">
                 Why FES?
                 <ChevronDown
                   size={16}
@@ -173,15 +183,18 @@ export default function Nav() {
               )}
             </li>
 
-            <li className="dropdown">
-              <a
-                href="#resources"
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleDropdown("resources");
-                }}
-                className="dropdown-toggle"
-              >
+            <li
+              className="dropdown"
+              onMouseEnter={(e) => {
+                e.preventDefault();
+                toggleDropdown("resources");
+              }}
+              onMouseLeave={(e) => {
+                e.preventDefault();
+                untoggleDropdown();
+              }}
+            >
+              <a className="dropdown-toggle">
                 Resources
                 <ChevronDown
                   size={16}
@@ -218,7 +231,7 @@ export default function Nav() {
             <div className={`overlay open`} onClick={() => setOpenModal(false)}>
               <div
                 className={`burger-modal open-modal`}
-                onClick={(e) => e.stopPropagation()}
+                onMouseEnter={(e) => e.stopPropagation()}
               >
                 <div className="burger-modal-header">
                   <button

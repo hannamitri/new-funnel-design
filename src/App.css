@@ -245,13 +245,12 @@ button {
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -50px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   min-width: 220px;
   z-index: 100;
-  margin-top: 8px;
   padding: 8px 0;
 }
 
@@ -270,7 +269,6 @@ button {
 .nav__links {
   display: flex;
   align-items: center;
-  /* margin-left: 100px; */
   gap: var(--spacing-lg);
   margin: 0 60px;
 }
@@ -2263,7 +2261,7 @@ PROMOTION BANNER
 /* Employers Section Styles */
 
 .employers-section {
-   padding: var(--spacing-lg);
+  padding: var(--spacing-lg);
   margin: var(--spacing-lg) auto;
   background-color: #fff;
   position: relative;
@@ -3218,7 +3216,6 @@ PROMOTION BANNER
 /* Footer Styles */
 
 .site-footer {
-  /* background-color: #f9f9f9; */
   padding: 5rem 0 2rem;
   color: #111;
   border-top: 1px solid #eee;

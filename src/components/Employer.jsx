@@ -1,31 +1,31 @@
 import React from "react";
+import discord from "../assets/discord.svg";
 
 function EmployersSection() {
-  // Company logos organized in rows
   const companyRows = [
     [
-      { name: "Discord", logo: "/api/placeholder/120/40" },
-      { name: "Google Play", logo: "/api/placeholder/120/40" },
-      { name: "Spotify", logo: "/api/placeholder/120/40" },
-      { name: "Pantone", logo: "/api/placeholder/120/40" },
-      { name: "PlayStation", logo: "/api/placeholder/120/40" },
-      { name: "Samsung", logo: "/api/placeholder/120/40" },
+      { name: "Discord", logo: discord },
+      { name: "Google Play", logo: discord },
+      { name: "Spotify", logo: discord },
+      { name: "Pantone", logo: discord },
+      { name: "PlayStation", logo: discord },
+      { name: "Samsung", logo: discord },
     ],
     [
-      { name: "Accenture", logo: "/api/placeholder/120/40" },
-      { name: "Decathlon", logo: "/api/placeholder/120/40" },
-      { name: "Societe Generale", logo: "/api/placeholder/120/40" },
-      { name: "Apple", logo: "/api/placeholder/120/40" },
-      { name: "Salesoft", logo: "/api/placeholder/120/40" },
-      { name: "Nielsen", logo: "/api/placeholder/120/40" },
+      { name: "Accenture", logo: discord },
+      { name: "Decathlon", logo: discord },
+      { name: "Societe Generale", logo: discord },
+      { name: "Apple", logo: discord },
+      { name: "Salesoft", logo: discord },
+      { name: "Nielsen", logo: discord },
     ],
     [
-      { name: "Aviagen", logo: "/api/placeholder/120/40" },
-      { name: "Aiven", logo: "/api/placeholder/120/40" },
-      { name: "HubSpot", logo: "/api/placeholder/120/40" },
-      { name: "Neurogazer", logo: "/api/placeholder/120/40" },
-      { name: "Zencare", logo: "/api/placeholder/120/40" },
-      { name: "IBM", logo: "/api/placeholder/120/40" },
+      { name: "Aviagen", logo: discord },
+      { name: "Aiven", logo: discord },
+      { name: "HubSpot", logo: discord },
+      { name: "Neurogazer", logo: discord },
+      { name: "Zencare", logo: discord },
+      { name: "IBM", logo: discord },
     ],
   ];
 

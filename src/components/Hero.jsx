@@ -10,10 +10,14 @@ import ProTips from "./ProTips";
 import BookingForm from "./BookingForm";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
+import PromoBanner from "./PromotionBanner";
+import Navbar from "./Navbar";
 
 function HeroSection() {
   return (
     <>
+      <Navbar />
+      <PromoBanner />
       <div className="hero-container">
         <img
           src="https://tripleten.com/usa-assets/usa-main/tild3334-3833-4239-a233-386263313331__-__format__webp__resolutiondesktop.png"

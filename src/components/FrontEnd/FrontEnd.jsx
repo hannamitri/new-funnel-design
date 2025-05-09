@@ -8,10 +8,15 @@ import CareerPath from "../CareerPath/CareetPath";
 import EmployersSection from "../Employer";
 import AdvisorCta from "../AdvisorCta/AdvisorCta";
 import TrainingHeader from "../TrainingHeader/TrainingHeader";
+import bestBootcamp from "../../assets/bestBootcamps.gif";
+import PromotionBanner from "../PromotionBanner";
+import Navbar from "../Navbar";
 
 const FrontEnd = () => {
   return (
     <div className="software-page">
+      <Navbar />
+      <PromotionBanner />
       <div className="software-page-wrapper">
         <header className="software-page__header">
           <div className="container">
@@ -89,25 +94,22 @@ const FrontEnd = () => {
               <div className="software-page__badges-container">
                 <div className="software-page__award-badge">
                   <img
-                    src="/path-to-career-karma-badge.png"
+                    src={bestBootcamp}
                     alt="Career Karma Best Coding Bootcamps 2025"
                   />
                 </div>
                 <div className="software-page__award-badge">
                   <img
-                    src="/path-to-career-finder-badge.png"
+                    src={bestBootcamp}
                     alt="Best Bootcamps 2024 Software Engineering"
                   />
                 </div>
                 <div className="software-page__award-badge">
-                  <img
-                    src="/path-to-switchup-badge.png"
-                    alt="Switchup Best Bootcamps 2025"
-                  />
+                  <img src={bestBootcamp} alt="Switchup Best Bootcamps 2025" />
                 </div>
                 <div className="software-page__award-badge">
                   <img
-                    src="/path-to-coursereport-badge.png"
+                    src={bestBootcamp}
                     alt="Course Report Best Coding Bootcamp 2025"
                   />
                 </div>

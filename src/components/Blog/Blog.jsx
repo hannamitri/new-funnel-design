@@ -6,6 +6,8 @@ import PodcastBanner from "../PodcastBanner/PodcastBanner";
 import ResourcesSection from "../ResourcesSection/ResourcesSection";
 import CareerCards from "../CareerCards/CareerCards";
 import Footer from "../Footer";
+import Navbar from "../Navbar";
+import PromoBanner from "../PromotionBanner";
 
 const Blog = () => {
   const [email, setEmail] = useState("");
@@ -22,6 +24,8 @@ const Blog = () => {
 
   return (
     <div className="blog-section">
+      <Navbar />
+      <PromoBanner />
       <div className="blog-section__wrapper">
         <header className="blog-section__header">
           <h2 className="blog-section__title">FES Blog</h2>
