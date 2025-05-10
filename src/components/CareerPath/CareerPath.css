@@ -1,171 +1,182 @@
-/* Career Path Component Styles */
-
 .career-path {
-  margin: 0 auto;
-  padding: var(--spacing-lg);
-  margin: var(--spacing-lg) auto;
-  font-family: var(--font-family);
-  background-color: white;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-sm);
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
 }
 
+/* Image + Title (no changes) */
 .career-path__image-container {
   width: 100%;
-  margin-bottom: var(--spacing-lg);
-  border-radius: var(--border-radius-md);
   overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 32px;
 }
-
 .career-path__image {
   width: 100%;
-  height: auto;
+  display: block;
   object-fit: cover;
 }
-
 .career-path__title {
   text-align: center;
-  font-size: var(--font-size-3xl);
-  color: var(--dark);
-  margin-bottom: var(--spacing-xl);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 48px;
 }
 
+/* TIMELINE WRAPPER */
 .career-path__timeline-container {
   position: relative;
-  padding: var(--spacing-xl) 0;
+  margin-bottom: 48px;
 }
 
 .career-path__line {
   position: absolute;
-  left: 0;
-  right: 0;
-  height: 2px;
-  width: 90%;
-  background-color: #f97316;
-  z-index: 1;
+  top: 25px;
+  left: 10%;
+  width: 80%;
+  height: 4px;
+  background-color: var(--primary);
+  border-radius: 2px;
+  z-index: 0;
 }
 
 .career-path__steps {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  max-width: 80%;
+  margin: 0 auto;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .career-path__step {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: calc(25% - var(--spacing-md));
+  flex: 1;
   position: relative;
+  text-align: center;
+  padding-top: 48px; /* room for the circle */
 }
 
+/* THE NUMBER CIRCLE */
 .career-path__step-number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background-color: #f97316; /* Orange background for step numbers */
-  color: white;
-  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  background-color: var(--primary);
+  color: #fff;
   font-weight: bold;
-  margin-bottom: var(--spacing-md);
-  border: 2px solid white;
-  box-shadow: 0 0 0 2px #f97316;
-  margin-top: -20px; /* Half the height to center on the line */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 4px #fff; /* white stroke */
 }
 
+/* STEP TITLE */
 .career-path__step-title {
-  font-size: var(--font-size-lg);
-  margin-bottom: var(--spacing-lg);
-  color: var(--dark);
-  margin-top: var(--spacing-lg);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 16px 0 24px;
+  line-height: 1.3;
 }
 
+/* BUTTONS (unchanged) */
 .career-path__button {
-  background-color: var(--grey-light);
+  background-color: #f2f2f2;
   border: none;
-  border-radius: var(--border-radius-md);
-  padding: var(--spacing-sm) var(--spacing-md);
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  color: #1a1a1a;
   cursor: pointer;
-  font-size: var(--font-size-sm);
-  color: var(--dark);
-  transition: var(--transition);
-}
-
-.career-path__button:hover {
-  background-color: #e5e7eb;
-}
-
-.career-path__button-icon {
-  font-size: var(--font-size-sm);
-}
-
-.career-path__step--final {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.career-path__button:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+.career-path__button-icon {
+  margin-left: 4px;
+  font-size: 1rem;
+}
+
+/* FINAL “New job” PILL */
+.career-path__step--final {
+  flex: none;
+  width: auto;
+  position: relative;
+  padding-top: 0; /* no circle here */
+  margin-left: auto; /* push it to the right */
 }
 
 .career-path__final-label {
-  background-color: #f97316; /* Orange background */
-  color: white;
-  padding: var(--spacing-xs) var(--spacing-md);
-  border-radius: var(--border-radius-full);
-  font-weight: bold;
-  font-size: var(--font-size-sm);
-  margin-top: -10px; /* To align with the line */
+  position: absolute;
+  top: 25px; /* line height */
+  right: 0; /* flush to the container’s right edge */
+  transform: translate(0, -50%); /* lift it exactly half its height */
+  background-color: var(--primary);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  box-shadow: 0 0 0 4px #fff; /* hides the line behind it */
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
+  .career-path {
+    padding: 24px;
+  }
+  .career-path__title {
+    font-size: 1.75rem;
+    margin-bottom: 32px;
+  }
   .career-path__timeline-container {
-    padding: 0;
+    margin-bottom: 32px;
+  }
+  .career-path__steps {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
   }
 
   .career-path__line {
     top: 0;
-    bottom: 0;
-    left: 20px;
+    left: 24px;
     right: auto;
-    width: 2px;
+    width: 4px;
     height: 100%;
-  }
-
-  .career-path__steps {
-    flex-direction: column;
-    gap: var(--spacing-xl);
-    padding-left: var(--spacing-xl);
   }
 
   .career-path__step {
     width: 100%;
-    padding-left: var(--spacing-xl);
-    margin-bottom: var(--spacing-lg);
+    padding-left: 64px;
+    padding-top: 0;
   }
-
   .career-path__step-number {
-    position: absolute;
-    left: -20px;
     top: 0;
-    margin-top: 0;
-    margin-left: -20px;
+    left: 24px;
+    transform: translate(-50%, 0);
   }
-
   .career-path__step-title {
-    margin-top: 0;
+    margin: 0 0 12px;
   }
-
   .career-path__step--final {
-    margin-top: var(--spacing-md);
+    margin-top: 16px;
+    padding-left: 64px;
   }
-
   .career-path__final-label {
-    margin-left: -40px;
-    margin-top: 0;
+    top: 0;
+    left: 24px;
+    transform: translate(-50%, 0);
   }
 }

@@ -14,7 +14,7 @@ const SocialProof = () => {
       id: 1,
       name: "April Hostler",
       title: "Director Of Admissions,",
-      company: "TripleTen",
+      company: "FES",
       bio: "April's focus is to empower individuals to build a life by investing in themselves first. She brings insights from 17+ years in B2B, project management, product management, and more!",
     },
     {
@@ -42,8 +42,8 @@ const SocialProof = () => {
               className="social-proof__logo-image"
             />
             <p className="social-proof__quote">
-              TripleTen's New Data Report Reveals Hiring Trends for Career
-              Pivoters Eyeing Tech
+              FES's New Data Report Reveals Hiring Trends for Career Pivoters
+              Eyeing Tech
             </p>
           </div>
 
@@ -54,8 +54,7 @@ const SocialProof = () => {
               className="social-proof__logo-image"
             />
             <p className="social-proof__quote">
-              TripleTen is included by Forbes in "5 Coding bootcamps to
-              consider"
+              FES is included by Forbes in "5 Coding bootcamps to consider"
             </p>
           </div>
 
@@ -66,8 +65,7 @@ const SocialProof = () => {
               className="social-proof__logo-image"
             />
             <p className="social-proof__quote">
-              TripleTen is the overall best Software Engineering bootcamp for
-              2024
+              FES is the overall best Software Engineering bootcamp for 2024
             </p>
           </div>
         </div>
@@ -123,7 +121,7 @@ const SocialProof = () => {
             </div>
             <p className="social-proof__author-title">Business Analyst</p>
             <p className="social-proof__author-details">
-              TripleTen BI Analytics graduate
+              FES BI Analytics graduate
             </p>
             <p className="social-proof__author-details">
               Former real estate agent

@@ -19,6 +19,8 @@ import { useState, useEffect } from "react";
 import StudentReviews from "./components/StudentReviews/StudentReviews.jsx";
 import Blog from "./components/Blog/Blog.jsx";
 import Career from "./components/Career/Career.jsx";
+import About from "./components/About/About.jsx";
+import BigFAQ from "./components/BigFAQ/BigFAQ.jsx";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="/student-reviews" element={<StudentReviews />} />
         <Route path="/career" element={<Career />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/faq" element={<BigFAQ />} />
         <Route path="/" element={<Hero />} />
         <Route path="/" element={<Featured />} />
         <Route path="/" element={<JobGuarantee />} />

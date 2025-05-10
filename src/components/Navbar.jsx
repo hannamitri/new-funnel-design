@@ -81,21 +81,13 @@ export default function Nav() {
 
   const resourcesDropdownItems = [
     {
-      item: "Blog",
-      href: "/blog",
+      item: "About FES",
+      href: "/about",
     },
-    // {
-    //   item: "Tutorials",
-    //   href: "/career",
-    // },
-    // {
-    //   item: "Free courses",
-    //   href: "/career",
-    // },
-    // {
-    //   item: "Documentation",
-    //   href: "/career",
-    // },
+    {
+      item: "FAQ",
+      href: "/faq",
+    },
     {
       item: "Career advice",
       href: "/career",

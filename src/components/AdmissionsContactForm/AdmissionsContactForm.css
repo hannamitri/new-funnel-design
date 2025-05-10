@@ -1,0 +1,195 @@
+/* Admissions Contact Form Styles */
+
+.contact-form {
+  background-color: var(--primary); /* Orange background */
+  padding: 64px 24px;
+  font-family: sans-serif;
+}
+
+.contact-form__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-form__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin: 0;
+  display: inline-block;
+}
+
+.contact-form__icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.contact-form__container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Steps */
+.contact-form__progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.contact-form__progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+.contact-form__step-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  color: #666;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  justify-content: center;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.contact-form__step-number--active {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.contact-form__step-label {
+  font-size: 14px;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.contact-form__progress-line {
+  position: absolute;
+  top: 16px; /* Half the height of the circle */
+  height: 2px;
+  background-color: #f0f0f0;
+  width: 100%;
+  left: 50%;
+  z-index: 1;
+}
+
+/* Form Fields */
+.contact-form__input-group {
+  margin-bottom: 20px;
+}
+
+.contact-form__input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #1a1a1a;
+  box-sizing: border-box;
+}
+
+.contact-form__input::placeholder {
+  color: #888;
+}
+
+.contact-form__phone-container {
+  position: relative;
+}
+
+.contact-form__phone-prefix {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1a1a1a;
+  font-size: 16px;
+}
+
+.contact-form__input--phone {
+  padding-left: 40px; /* Space for the +1 prefix */
+}
+
+/* Checkbox */
+.contact-form__checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.contact-form__checkbox {
+  margin-top: 4px;
+  margin-right: 12px;
+}
+
+.contact-form__checkbox-label {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #666;
+}
+
+.contact-form__link {
+  color: var(--primary); /* Orange link color */
+  text-decoration: none;
+}
+
+.contact-form__link:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.contact-form__button {
+  width: 100%;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 16px;
+}
+
+.contact-form__button:hover {
+  background-color: #333;
+}
+
+/* Disclaimer */
+.contact-form__disclaimer {
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .contact-form__container {
+    padding: 24px;
+  }
+
+  .contact-form__title {
+    font-size: 28px;
+  }
+
+  .contact-form__step-label {
+    font-size: 12px;
+  }
+}

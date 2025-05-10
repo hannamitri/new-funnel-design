@@ -163,12 +163,9 @@ button {
 
 /* ===== NAVIGATION ===== */
 .nav {
-  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
-  /* background-color: white; */
-  /* box-shadow: var(--shadow-sm); */
   z-index: 100;
   padding: var(--spacing-md) 0;
   display: flex;
@@ -179,6 +176,7 @@ button {
 .nav-replacement {
   height: 78px;
   width: 100%;
+  /* background-color: rgb(227, 227, 227); */
 }
 
 .nav.transparent {
@@ -202,13 +200,12 @@ button {
 }
 
 .nav__container.solid {
-  background-color: rgb(227, 227, 227);
   padding: 10px;
   border-radius: 10px;
+  background-color: rgb(227, 227, 227);
 }
 
 .nav__logo {
-  /* font-size: var(--font-size-2xl); */
   font-weight: 700;
   width: 300px;
 }

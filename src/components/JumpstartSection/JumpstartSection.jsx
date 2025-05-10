@@ -14,7 +14,7 @@ const JumpstartSection = () => {
     },
     {
       id: 2,
-      title: "Find out how TripleTen gets you job-ready",
+      title: "Find out how FES gets you job-ready",
       description:
         "Our students don't just learn professional tools—they become professionals. A deep curriculum and individual career coaching get you to the finish line.",
     },

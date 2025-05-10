@@ -1,6 +1,6 @@
 import React from "react";
 import womanLaptopCouch from "../../assets/womanLaptopCouch.jpg";
-import "./CareerPath.css"; // Assuming you have a CSS file for styles
+import "./CareerPath.css";
 
 const CareerPath = () => {
   return (
@@ -16,7 +16,7 @@ const CareerPath = () => {
       <h2 className="career-path__title">How you get a new career</h2>
 
       <div className="career-path__timeline-container">
-        <div className="career-path__line"></div>
+        <div className="career-path__line" />
 
         <div className="career-path__steps">
           <div className="career-path__step">
