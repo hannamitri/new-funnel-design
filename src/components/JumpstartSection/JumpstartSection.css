@@ -44,7 +44,7 @@
 .jumpstart__expert {
   display: flex;
   align-items: center;
-  background-color: #F8FAFC;
+  background-color: #f8fafc;
   border-top-left-radius: 24px;
   padding: var(--spacing-md);
   gap: var(--spacing-xs);
@@ -109,23 +109,32 @@
 
 /* Responsive styles */
 @media (max-width: 1024px) {
+  /* Stack the quote bubbles vertically and ditch absolute magic */
   .jumpstart__quotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: auto;
-    margin-bottom: 200px; /* Space for both quote bubbles */
+    margin-bottom: calc(var(--spacing-xl) * 2);
+    gap: var(--spacing-lg);
   }
 
   .jumpstart__quote {
-    max-width: 250px;
+    position: relative; /* no more absolute */
+    max-width: 90%;
+    width: 100%;
+    margin: 0;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
   }
 
-  .jumpstart__quote--left {
-    left: 20px;
-  }
-
+  /* give the second bubble a little breathing room */
   .jumpstart__quote--right {
-    right: 20px;
+    margin-top: var(--spacing-md);
   }
 
+  /* stack benefits to one column as well */
   .jumpstart__benefits {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
@@ -133,24 +142,7 @@
 }
 
 @media (max-width: 768px) {
-  .jumpstart__quotes {
-    margin-bottom: 250px;
-  }
-
-  .jumpstart__quote {
-    width: 80%;
-    max-width: 300px;
-  }
-
-  .jumpstart__quote--left {
-    left: 0;
-  }
-
-  .jumpstart__quote--right {
-    top: 120px;
-    right: 0;
-  }
-
+  /* just shrink the heading on small phones */
   .jumpstart__title {
     font-size: var(--font-size-2xl);
   }
