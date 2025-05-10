@@ -1,6 +1,7 @@
 import React from "react";
 import "./ReviewsSection.css";
 import Nav from "../Navbar";
+import switchup from "../../assets/switchup.png";
 
 const ReviewsSection = () => {
   return (
@@ -26,7 +27,7 @@ const ReviewsSection = () => {
             </div>
             <div className="reviews__platform">
               <img
-                src="/api/placeholder/120/40"
+                src={switchup}
                 alt="Course Report"
                 className="reviews__logo reviews__logo--course-report"
               />
@@ -39,7 +40,7 @@ const ReviewsSection = () => {
             </div>
             <div className="reviews__platform">
               <img
-                src="/api/placeholder/120/40"
+                src={switchup}
                 alt="SwitchUp"
                 className="reviews__logo reviews__logo--switchup"
               />
@@ -52,7 +53,7 @@ const ReviewsSection = () => {
             </div>
             <div className="reviews__platform">
               <img
-                src="/api/placeholder/120/40"
+                src={switchup}
                 alt="Career Karma"
                 className="reviews__logo reviews__logo--career-karma"
               />
@@ -65,7 +66,7 @@ const ReviewsSection = () => {
             </div>
             <div className="reviews__platform">
               <img
-                src="/api/placeholder/120/40"
+                src={switchup}
                 alt="Trustpilot"
                 className="reviews__logo reviews__logo--trustpilot"
               />

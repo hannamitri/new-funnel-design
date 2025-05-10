@@ -3,12 +3,12 @@
 }
 
 .faq__header {
-  background-color: #ff9b76; 
-  text-align: center;
+  background-color: #ff9b76;
 }
 
 .faq__header-wrapper {
   padding: 64px 24px;
+  text-align: center;
 }
 
 .faq__title {

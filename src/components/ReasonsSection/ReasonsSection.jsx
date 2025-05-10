@@ -1,5 +1,6 @@
 import React from "react";
 import "./ReasonsSection.css";
+import guyWithBeard from "../../assets/guyWithBeard.webp";
 
 const ReasonsSection = () => {
   const reasons = [
@@ -50,17 +51,17 @@ const ReasonsSection = () => {
             Talk to our advisors
             <span className="reasons__advisors-avatars">
               <img
-                src="/api/placeholder/30/30"
+                src={guyWithBeard}
                 alt="Advisor"
                 className="reasons__advisor-avatar"
               />
               <img
-                src="/api/placeholder/30/30"
+                src={guyWithBeard}
                 alt="Advisor"
                 className="reasons__advisor-avatar"
               />
               <img
-                src="/api/placeholder/30/30"
+                src={guyWithBeard}
                 alt="Advisor"
                 className="reasons__advisor-avatar"
               />

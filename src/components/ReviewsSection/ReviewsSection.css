@@ -1,11 +1,14 @@
 .reviews {
+  position: relative;
+  z-index: 10;
+  margin-bottom: -40px;
   max-width: 1000px;
   margin: 0 auto;
   padding: var(--spacing-xl) var(--spacing-lg);
   background: radial-gradient(
     50.94% 50.94% at 50% 50%,
     var(--primary-light) 12.62%,
-    #F8FAFC
+    #f8fafc
   );
   border-radius: 50%;
   text-align: center;

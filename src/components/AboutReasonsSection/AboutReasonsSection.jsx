@@ -31,7 +31,7 @@ const AboutReasonsSection = () => {
         <h2 className="about-reasons__title">
           Need more reasons
           <br />
-          to choose TripleTen?
+          to choose FES?
         </h2>
 
         <ul className="about-reasons__list">

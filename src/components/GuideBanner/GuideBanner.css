@@ -1,9 +1,9 @@
-/* Guide Banner Styles */
-
 .guide-banner {
-  background-color: #6eca8d; /* Green background */
+  background-color: #6eca8d;
   border-radius: 16px;
   padding: 48px;
+  position: relative;
+  overflow: hidden;
 }
 
 .guide-banner__content {
