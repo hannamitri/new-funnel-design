@@ -159,20 +159,24 @@
 
   .career-path__step {
     width: 100%;
-    padding-left: 64px;
     padding-top: 0;
   }
+
   .career-path__step-number {
     top: 0;
     left: 24px;
     transform: translate(-50%, 0);
+    display: none;
   }
   .career-path__step-title {
     margin: 0 0 12px;
   }
   .career-path__step--final {
     margin-top: 16px;
-    padding-left: 64px;
+    display: none;
+  }
+  .career-path__line {
+    display: none;
   }
   .career-path__final-label {
     top: 0;

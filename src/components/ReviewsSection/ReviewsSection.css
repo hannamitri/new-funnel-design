@@ -137,7 +137,6 @@
   max-height: 40px;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .reviews__source-tag {
     position: relative;
@@ -147,26 +146,47 @@
   }
 
   .reviews__ratings-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    width: 100%;
+    max-width: none;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .reviews__rating-item {
     position: relative;
     width: 100%;
-    margin-bottom: var(--spacing-xl);
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reviews__rating-item--top-left,
+  .reviews__rating-item--top-right,
+  .reviews__rating-item--bottom {
     top: auto;
-    left: auto;
     right: auto;
     bottom: auto;
+    left: auto;
+  }
+
+  /* 🔥 Fix: override the nth-of-type offsets on mobile */
+  .reviews__rating-item--bottom:nth-of-type(2),
+  .reviews__rating-item--bottom:nth-of-type(3) {
+    left: auto !important;
+    right: auto !important;
   }
 
   .reviews__score {
-    margin-bottom: 0;
-    margin-right: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .reviews__ratings-container {
+    grid-template-columns: 1fr;
   }
 }

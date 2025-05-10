@@ -218,4 +218,21 @@
     flex-direction: column;
     gap: var(--spacing-xl);
   }
+
+  @media (max-width: 768px) {
+    .after-FES__profile {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .after-FES__avatar-container {
+      width: 100px;
+      height: 100px;
+    }
+
+    .after-FES__avatar {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }

@@ -236,10 +236,10 @@ export default function Nav() {
                 <ul className="burger-modal-links">
                   <li className="burger-modal-link-wrapper">
                     <h1>Programs</h1>
-                    <a className="burger-modal-link" href="#programs">
-                      Web Development
+                    <a className="burger-modal-link" href="/software-engineer">
+                      Software Engineer
                     </a>
-                    <a className="burger-modal-link" href="#programs">
+                    {/* <a className="burger-modal-link" href="#programs">
                       Quality Assurance
                     </a>
                     <a className="burger-modal-link" href="#programs">
@@ -256,11 +256,11 @@ export default function Nav() {
                     </a>
                     <a className="burger-modal-link" href="#programs">
                       Not sure? Take our career quiz!
-                    </a>
+                    </a> */}
                   </li>
                   <li className="burger-modal-link-wrapper">
                     <h1>Why FES</h1>
-                    <a className="burger-modal-link" href="#programs">
+                    {/* <a className="burger-modal-link" href="#programs">
                       2025 Outcomes report
                     </a>
                     <a className="burger-modal-link" href="#programs">
@@ -274,23 +274,23 @@ export default function Nav() {
                     </a>
                     <a className="burger-modal-link" href="#programs">
                       One-on-one support
-                    </a>
-                    <a className="burger-modal-link" href="#programs">
+                    </a> */}
+                    <a className="burger-modal-link" href="student-reviews">
                       Student reviews
                     </a>
                   </li>
                   <li className="burger-modal-link-wrapper">
                     <h1>Resources</h1>
-                    <a className="burger-modal-link" href="/blog">
+                    <a className="burger-modal-link" href="/about">
                       About FES
                     </a>
-                    <a className="burger-modal-link" href="#programs">
+                    <a className="burger-modal-link" href="/faq">
                       FAQ
                     </a>
-                    <a className="burger-modal-link" href="#programs">
+                    {/* <a className="burger-modal-link" href="#programs">
                       Documentation
-                    </a>
-                    <a className="burger-modal-link" href="#programs">
+                    </a> */}
+                    <a className="burger-modal-link" href="/career">
                       Career advice
                     </a>
                   </li>
